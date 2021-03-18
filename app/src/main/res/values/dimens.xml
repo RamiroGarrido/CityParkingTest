@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--SPLASH-->
+    <dimen name="splashText">22sp</dimen>
+    <dimen name="paddingText">5dp</dimen>
+    <dimen name="widthLogoSplash">300dp</dimen>
+    <dimen name="heightLogoSplash">200dp</dimen>
+    <!--ACTIVITY MAIN-->
+    <dimen name="titulosMain">17sp</dimen>
+    <dimen name="titulosMain2">15sp</dimen>
+    <dimen name="textoMain">13sp</dimen>
+    <dimen name="textoMain2">10sp</dimen>
+    <dimen name="widthOpcionesMain">300dp</dimen>
+    <dimen name="widthBotonesMain">170dp</dimen>
+    <dimen name="marginTopMain">15dp</dimen>
+    <dimen name="marginTopMain2">5dp</dimen>
+    <dimen name="marginInternoMain">2.5dp</dimen>
+    <dimen name="cardViewWidth">80dp</dimen>
+    <dimen name="cardViewHeight">100dp</dimen>
+    <dimen name="cardViewCornerR">10dp</dimen>
+    <dimen name="paddingMain">5dp</dimen>
+    <!--REGISTRO VEHICULO-->
+    <dimen name="widthRegistroVehiculo">250dp</dimen>
+    <dimen name="titulosRV">20sp</dimen>
+    <dimen name="textoRV">15sp</dimen>
+    <dimen name="textoRV2">13sp</dimen>
+    <dimen name="marginTopRV">15dp</dimen>
+    <dimen name="marginTopRV2">5dp</dimen>
+    <dimen name="paddingRV">5dp</dimen>
+    <!--RETIRAR VEHICULO-->
+    <dimen name="heightButtonVolver">40dp</dimen>
+    <dimen name="heightButtonVolver2">-50dp</dimen>
+    <dimen name="tituloRetirarV">17sp</dimen>
+    <!--LISTAR VEHICULO RECYCLERVIEW CHILD-->
+    <dimen name="textoRVC">12sp</dimen>
+    <dimen name="paddingRVC">5dp</dimen>
+    <dimen name="marginTopRVC">5dp</dimen>
+    <dimen name="paddingRVC2">10dp</dimen>
+    <dimen name="heightButtonRetirar">28dp</dimen>
+</resources>

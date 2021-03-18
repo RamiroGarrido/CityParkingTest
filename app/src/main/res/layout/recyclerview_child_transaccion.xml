@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/paddingRVC2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/SteelBlue"
+        app:cardCornerRadius="@dimen/cardViewCornerR"
+        app:contentPadding="@dimen/paddingRV">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/factura"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/facturaRVCT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/placaVehiculo"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/placaRVCT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/valorTotal"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/valorTotalRVCT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/fechaEntrada"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fechaEntradaRVCT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/fechaSalida"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fechaSalidaRVCT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

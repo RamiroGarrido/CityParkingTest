@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/cdImagenFondo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fondo3" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/TransparentWhite"
+            android:fillViewport="true"
+            >
+
+            <LinearLayout
+                android:layout_width="@dimen/widthOpcionesMain"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/marginTopRV2"
+                    android:fontFamily="serif"
+                    android:text="@string/registrarVehiculo"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/titulosRV"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="@dimen/widthRegistroVehiculo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopRV"
+                    android:gravity="center_vertical"
+                    android:text="@string/fecha"
+                    android:textColor="@color/SteelBlue"
+                    android:textSize="@dimen/textoRV"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+                <TextView
+                    android:id="@+id/textoFechaEscogidaRV"
+                    android:layout_width="@dimen/widthRegistroVehiculo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopRV2"
+                    android:gravity="center_vertical"
+                    android:background="@color/White"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/textoRV"
+                    android:fontFamily="serif"
+                    android:visibility="gone"
+                    />
+                <Button
+                    android:id="@+id/buttonEscogerFechaRV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="@string/escogerFecha"
+                    android:background="@color/SteelBlue"
+                    android:textColor="@color/White"
+                    android:padding="@dimen/paddingRV"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="@dimen/marginTopRV2"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/widthRegistroVehiculo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopRV"
+                    android:gravity="center_vertical"
+                    android:text="@string/hora"
+                    android:textColor="@color/SteelBlue"
+                    android:textSize="@dimen/textoRV"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+                <TextView
+                    android:layout_width="@dimen/widthRegistroVehiculo"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/horaDescripcion"
+                    android:textColor="@color/SteelBlue"
+                    android:textSize="@dimen/textoRV2"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextHoraRV"
+                    android:layout_width="@dimen/widthRegistroVehiculo"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:hint="@string/hintHora"
+                    android:maxLength="4"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/Black"
+                    android:fontFamily="serif"
+                    />
+                <TextView
+                    android:layout_width="@dimen/widthRegistroVehiculo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopRV"
+                    android:gravity="center_vertical"
+                    android:text="@string/nombreVehiculo"
+                    android:textColor="@color/SteelBlue"
+                    android:textSize="@dimen/textoRV"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNombreVehiculo"
+                    android:layout_width="@dimen/widthRegistroVehiculo"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:hint="@string/hintNombreV"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/Black"
+                    android:fontFamily="serif"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/widthRegistroVehiculo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopRV"
+                    android:gravity="center_vertical"
+                    android:text="@string/ubicacion"
+                    android:textColor="@color/SteelBlue"
+                    android:textSize="@dimen/textoRV"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextUbicacion"
+                    android:layout_width="@dimen/widthRegistroVehiculo"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:maxLength="3"
+                    android:hint="@string/hintUbicacion"
+                    android:inputType="textMultiLine|textCapCharacters"
+                    android:textColor="@color/Black"
+                    android:fontFamily="serif"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/widthRegistroVehiculo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopRV"
+                    android:gravity="center_vertical"
+                    android:text="@string/placa"
+                    android:textColor="@color/SteelBlue"
+                    android:textSize="@dimen/textoRV"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextPlaca"
+                    android:layout_width="@dimen/widthRegistroVehiculo"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:hint="@string/hintPlaca"
+                    android:maxLength="6"
+                    android:inputType="textMultiLine|textCapCharacters"
+                    android:textColor="@color/Black"
+                    android:fontFamily="serif"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/widthRegistroVehiculo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopRV"
+                    android:gravity="center_vertical"
+                    android:text="@string/telefonoContacto"
+                    android:textColor="@color/SteelBlue"
+                    android:textSize="@dimen/textoRV"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextTelefonoContacto"
+                    android:layout_width="@dimen/widthRegistroVehiculo"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:hint="@string/escribaAqui"
+                    android:inputType="number"
+                    android:textColor="@color/Black"
+                    android:fontFamily="serif"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/widthRegistroVehiculo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopRV"
+                    android:gravity="center_vertical"
+                    android:text="@string/golpeORayon"
+                    android:textColor="@color/SteelBlue"
+                    android:textSize="@dimen/textoRV"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextGolpeRayon"
+                    android:layout_width="@dimen/widthRegistroVehiculo"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:hint="@string/escribaAqui"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/Black"
+                    android:fontFamily="serif"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/widthRegistroVehiculo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopRV"
+                    android:gravity="center_vertical"
+                    android:text="@string/objetosEnVehiculo"
+                    android:textColor="@color/SteelBlue"
+                    android:textSize="@dimen/textoRV"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextObjetosVehiculo"
+                    android:layout_width="@dimen/widthRegistroVehiculo"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:hint="@string/escribaAqui"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/Black"
+                    android:fontFamily="serif"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonCancelarRV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/marginTopRV"
+                        android:layout_marginEnd="@dimen/marginTopRV"
+                        android:layout_marginBottom="@dimen/marginTopRV2"
+                        android:background="@color/SteelBlue"
+                        android:padding="@dimen/paddingRV"
+                        android:text="@string/cancelar"
+                        android:textColor="@color/White"
+                        android:fontFamily="serif"
+                        />
+
+                    <Button
+                        android:id="@+id/buttonGuardarRV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/marginTopRV"
+                        android:layout_marginBottom="@dimen/marginTopRV2"
+                        android:background="@color/SteelBlue"
+                        android:padding="@dimen/paddingRV"
+                        android:text="@string/guardarDatos"
+                        android:textColor="@color/White"
+                        android:fontFamily="serif"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/paddingRVC2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/SteelBlue"
+        app:cardCornerRadius="@dimen/cardViewCornerR"
+        app:contentPadding="@dimen/paddingRV">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/idOperario"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/idOperarioRVCA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/operario"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/operarioRVCA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/vehiculosRegistrados"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/vehiculosRegRVCA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/vehiculosRetirados"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/vehiculosRetRVCA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

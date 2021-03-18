@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/cdImagenFondo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fondo3" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/TransparentWhite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/widthOpcionesMain"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="serif"
+                        android:text="@string/datosGenerales"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/titulosMain"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marginTopMain2"
+                        android:fontFamily="serif"
+                        android:text="@string/tarifaValet"
+                        android:textColor="@color/DarkGreen"
+                        android:textSize="@dimen/titulosMain2"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="serif"
+                        android:layout_marginTop="@dimen/marginTopMain2"
+                        android:text="@string/tarifaParqueo"
+                        android:textColor="@color/DarkGreen"
+                        android:textSize="@dimen/titulosMain2"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/buttonListadoVehiculos"
+                        android:layout_width="@dimen/widthBotonesMain"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marginTopMain"
+                        android:background="@color/SteelBlue"
+                        android:fontFamily="serif"
+                        android:text="@string/listadoVehiculos"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/textoMain"
+                        android:textStyle="italic" />
+
+                    <Button
+                        android:id="@+id/buttonInfoTransacciones"
+                        android:layout_width="@dimen/widthBotonesMain"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marginTopMain2"
+                        android:background="@color/SteelBlue"
+                        android:fontFamily="serif"
+                        android:text="@string/informacionTransacciones"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/textoMain"
+                        android:textStyle="italic" />
+
+                    <Button
+                        android:id="@+id/buttonOperarios"
+                        android:layout_width="@dimen/widthBotonesMain"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marginTopMain2"
+                        android:layout_marginBottom="@dimen/marginTopMain2"
+                        android:background="@color/SteelBlue"
+                        android:fontFamily="serif"
+                        android:text="@string/informacionOperarios"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/textoMain"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/widthOpcionesMain"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopMain"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="serif"
+                        android:text="@string/operacionesOperario"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/titulosMain"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marginTopMain2"
+                        android:fontFamily="serif"
+                        android:text="@string/escogerOperario"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/titulosMain2"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/paddingMain"
+
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardViewValet1"
+                            android:layout_width="@dimen/cardViewWidth"
+                            android:layout_height="@dimen/cardViewHeight"
+                            android:layout_marginEnd="@dimen/marginInternoMain"
+                            app:cardBackgroundColor="@color/White"
+                            app:cardCornerRadius="@dimen/cardViewCornerR">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.6"
+                                    android:contentDescription="@string/cdImagenOperario"
+                                    android:padding="@dimen/paddingMain"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/valet1" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.4"
+                                    android:fontFamily="serif"
+                                    android:gravity="center"
+                                    android:padding="@dimen/paddingMain"
+                                    android:text="@string/operario1"
+                                    android:textColor="@color/Black"
+                                    android:textSize="@dimen/textoMain2" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardViewValet2"
+                            android:layout_width="@dimen/cardViewWidth"
+                            android:layout_height="@dimen/cardViewHeight"
+                            android:layout_marginStart="@dimen/marginInternoMain"
+                            android:layout_marginEnd="@dimen/marginInternoMain"
+                            app:cardBackgroundColor="@color/White"
+                            app:cardCornerRadius="@dimen/cardViewCornerR">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.6"
+                                    android:contentDescription="@string/cdImagenOperario"
+                                    android:padding="@dimen/paddingMain"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/valet2" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.4"
+                                    android:fontFamily="serif"
+                                    android:gravity="center"
+                                    android:padding="@dimen/paddingMain"
+                                    android:text="@string/operario2"
+                                    android:textColor="@color/Black"
+                                    android:textSize="@dimen/textoMain2" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardViewValet3"
+                            android:layout_width="@dimen/cardViewWidth"
+                            android:layout_height="@dimen/cardViewHeight"
+                            android:layout_marginStart="@dimen/marginInternoMain"
+                            app:cardBackgroundColor="@color/White"
+                            app:cardCornerRadius="@dimen/cardViewCornerR">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.6"
+                                    android:contentDescription="@string/cdImagenOperario"
+                                    android:padding="@dimen/paddingMain"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/valet3" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.4"
+                                    android:fontFamily="serif"
+                                    android:gravity="center"
+                                    android:padding="@dimen/paddingMain"
+                                    android:text="@string/operario3"
+                                    android:textColor="@color/Black"
+                                    android:textSize="@dimen/textoMain2" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marginTopMain2"
+                        android:fontFamily="serif"
+                        android:text="@string/escogerAccion"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/titulosMain2"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/buttonRegistrarVehiculo"
+                        android:layout_width="@dimen/widthBotonesMain"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marginTopMain"
+                        android:background="@color/SteelBlue"
+                        android:fontFamily="serif"
+                        android:text="@string/registrarVehiculo"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/textoMain"
+                        android:textStyle="italic" />
+
+                    <Button
+                        android:id="@+id/buttonSacarVehiculo"
+                        android:layout_width="@dimen/widthBotonesMain"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marginTopMain2"
+                        android:layout_marginBottom="@dimen/marginTopMain2"
+                        android:background="@color/SteelBlue"
+                        android:fontFamily="serif"
+                        android:text="@string/sacarVehiculo"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/textoMain"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

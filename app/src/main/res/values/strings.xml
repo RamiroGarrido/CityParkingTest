@@ -1,0 +1,77 @@
+<resources>
+    <string name="appName">CityParkingTest</string>
+    <string name="autor">Test: Ramiro Garrido M.</string>
+    <!--SPLASH-->
+    <string name="cdImagenSplash">Logotipo City Parking</string>
+    <!--MAIN-->
+    <string name="cdImagenFondo">Imagen de fondo</string>
+    <string name="cdImagenOperario">Imagen perfil operario</string>
+    <string name="datosGenerales">Datos Generales</string>
+    <string name="tarifaParqueo">Precio Parqueo: $5.000</string>
+    <string name="tarifaValet">Precio Valet: $10.000</string>
+    <string name="informacionOperarios">Información operarios</string>
+    <string name="informacionTransacciones">Información transacciones</string>
+    <string name="listadoVehiculos">Listado de Vehiculos</string>
+    <string name="operacionesOperario">Operaciones por Operario</string>
+    <string name="escogerOperario">1 - Escoja operario</string>
+    <string name="escogerAccion">2 - Escoja una acción</string>
+    <string name="registrarVehiculo">Registrar Vehículo</string>
+    <string name="sacarVehiculo">Sacar Vehículo</string>
+    <string name="operario1">Juan Perez</string>
+    <string name="operario2">Ana Rodriguez</string>
+    <string name="operario3">Camilo Vanegas</string>
+    <string name="errorOperario">Debe escoger un operario</string>
+    <string name="errorNoHayDatos">No existen datos</string>
+    <!--REGISTRO VEHICULO-->
+    <string name="hintNombreV">Ej: Chevrolet Tracker</string>
+    <string name="hintUbicacion">Ej: A15</string>
+    <string name="hintPlaca">Ej: AAA123</string>
+    <string name="escribaAqui">Escriba aquí</string>
+    <string name="golpeORayon">Golpe o rayón</string>
+    <string name="objetosEnVehiculo">Objetos dentro</string>
+    <string name="fecha">Fecha*</string>
+    <string name="fechaEscogida">%1$s/%2$s/%3$s</string>
+    <string name="escogerFecha">Escoger fecha</string>
+    <string name="hora">Hora*</string>
+    <string name="horaDescripcion">(4 números hora militar)</string>
+    <string name="hintHora">Ej: 2311</string>
+    <string name="nombreVehiculo">Nombre vehículo*</string>
+    <string name="ubicacion">Ubicación*</string>
+    <string name="placa">Placa*</string>
+    <string name="telefonoContacto">Teléfono contacto</string>
+    <string name="guardarDatos">Guardar Registro</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="errorDatos">Datos incompletos</string>
+    <string name="datosGuardados">Datos guardados exitosamente</string>
+    <!--RETIRAR VEHICULO-->
+    <string name="fecha2">Fecha escogida</string>
+    <string name="tituloListaV">Lista de Vehículos</string>
+    <string name="totalItemsLista">Items totales: %1$s</string>
+    <string name="volver">Volver</string>
+    <string name="ok">OK</string>
+    <string name="errorFecha">La fecha de salida no puede ser anterior a la fecha de entrada</string>
+    <string name="vehiculoRetirado">Vehículo retirado exitosamente por: %1$s</string>
+    <!--RECYCLER VIEW CHILD LISTA-->
+    <string name="parqueadero">Parqueadero:</string>
+    <string name="ubicacion2">Ubicación:</string>
+    <string name="nombreVehiculo2">Nombre Vehículo:</string>
+    <string name="placaVehiculo">Placa Vehículo:</string>
+    <string name="fechaEntrada">Fecha entrada:</string>
+    <string name="horaEntrada">Hora entrada:</string>
+    <string name="montoAPagar">Monto a pagar:</string>
+    <string name="dinero">$ %1$s</string>
+    <string name="retirarVehiculo">Retirar Vehículo</string>
+    <!--RECYCLER VIEW CHILD TRANSACCIONES-->
+    <string name="factura">Id factura:</string>
+    <string name="valorTotal">Valor total:</string>
+    <string name="fechaSalida">Fecha salida:</string>
+    <!--LISTA TRANSACCIONES-->
+    <string name="tituloTransacciones">Lista de Transacciones</string>
+    <!--LISTA ACCIONES OPERARIOS-->
+    <string name="tituloAcciones">Lista de Acciones</string>
+    <!--RECYCLER VIEW CHILD ACCIONES-->
+    <string name="idOperario">Id Operario:</string>
+    <string name="operario">Operario:</string>
+    <string name="vehiculosRegistrados">Vehiculos registrados:</string>
+    <string name="vehiculosRetirados">Vehiculos retirados:</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/cdImagenFondo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fondo3" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/TransparentWhite">
+
+            <LinearLayout
+                android:id="@+id/contenedorTituloLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tituloLista"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/tituloRetirarV"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totalLista"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/tituloRetirarV" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewLista"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/contenedorTituloLista"
+                android:layout_marginBottom="@dimen/heightButtonVolver" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recyclerViewLista"
+                android:layout_marginTop="@dimen/heightButtonVolver2"
+                android:background="@color/White"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/paddingRVC">
+
+                <Button
+                    android:id="@+id/buttonCancelarLista"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/heightButtonVolver"
+                    android:background="@color/SteelBlue"
+                    android:padding="@dimen/paddingRV"
+                    android:text="@string/volver"
+                    android:textColor="@color/White" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

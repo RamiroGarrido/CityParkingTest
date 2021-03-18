@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/paddingRVC2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/SteelBlue"
+        app:cardCornerRadius="@dimen/cardViewCornerR"
+        app:contentPadding="@dimen/paddingRV">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/parqueadero"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/parqueaderoRVC"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/ubicacion2"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ubicacionRVC"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/nombreVehiculo2"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nombreVehiculoRVC"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/placaVehiculo"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/placaVehiculoRVC"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/fechaEntrada"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fechaEntradaRVC"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/montoAPagar"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/montoAPagarRVC"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/textoRVC" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonRetirarRVC"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/heightButtonRetirar"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/marginTopRVC"
+                android:background="@color/Transparent2SkyBlue"
+                android:padding="@dimen/paddingRVC"
+                android:text="@string/retirarVehiculo"
+                android:textColor="@color/White"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
